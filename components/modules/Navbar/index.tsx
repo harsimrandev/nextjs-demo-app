@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import MobileNav from '@/components/MobileNav';
-import Logo from '@/components/Logo';
-import Navlinks from '@/components/Navlinks';
+import MobileNav from '@/components/modules/MobileNav';
+import Logo from '@/components/elements/Logo';
+import Navlinks from '@/components/elements/Navlinks';
 
 const links = [
   { name: "The Edit", href: "#" },

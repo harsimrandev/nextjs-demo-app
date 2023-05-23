@@ -2,8 +2,8 @@ import React from 'react';
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from '@/components/Logo';
-import Navlinks from '@/components/Navlinks';
+import Logo from '@/components/elements/Logo';
+import Navlinks from '@/components/elements/Navlinks';
 
 type MobileNavProps = {
     mobileMenuOpen: boolean,

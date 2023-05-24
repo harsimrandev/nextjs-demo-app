@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductsImages() {
   return (
@@ -44,6 +45,23 @@ export default function ProductsImages() {
           height={400}
           style={{ objectFit: "fill" }}
         />
+      </div>
+      <div className="flex justify-center mt-20">
+        <p className="text-sm mr-5">
+          <Link href="/" className="underline">
+            Jonathan Simkhai
+          </Link>
+        </p>
+        <p className="text-sm  mr-5">
+          <Link href="/" className="underline">
+            Blazers
+          </Link>
+        </p>
+        <p className="text-sm">
+          <Link href="/" className="underline">
+            Viscose
+          </Link>
+        </p>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import NavBar from '@/components/modules/Navbar'
 import TabSection from '@/components/modules/TabSection'
 import CartSection from '@/components/modules/CartSection'
 import ProductsImages from '@/components/modules/ProductsImages'
+import Footer from '@/components/modules/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,8 @@ export default function Home() {
       <ProductsImages />
       <CartSection />
     </main>
+    <Footer />
+
     </>
   )
 }

@@ -10,7 +10,7 @@ function Tab(props: TabProps) {
     const { activeTab, label, onClick } = props;
 
     return (
-        <p onClick={() => onClick(label)} className= {`uppercase text-sm ${activeTab === label ? 'font-bold' : 'text-[#767676]'}`}>{label}</p>
+        <p onClick={() => onClick(label)} className= {`cursor-pointer uppercase text-sm ${activeTab === label ? 'font-bold' : 'text-[#767676]'}`}>{label}</p>
     )
 }
 

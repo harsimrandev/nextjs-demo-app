@@ -19,3 +19,25 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.carousel .control-dots .dot {
+  border-radius: 0% !important;
+  width: 16px !important;
+  height: 2px !important;
+  background-color: black !important;
+  opacity: 0.2 !important;
+  box-shadow: none !important;
+}
+
+.carousel .control-dots {
+  bottom: -8px !important;
+}
+
+.carousel .control-dots .dot.selected {
+  background: black !important;
+  opacity: 1 !important;
+}
+
+.carousel.carousel-slider {
+  overflow: visible !important;
+}

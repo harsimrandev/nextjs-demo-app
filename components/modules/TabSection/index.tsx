@@ -4,11 +4,11 @@ import Tabs from "@/components/modules/Tabs";
 
 function TabSection() {
   return (
-    <section>
+    <section className="hidden lg:block">
       <div className="sticky top-0">
         <Tabs>
           <div data-label="Details">
-            <p className="text-sm">
+            <p className="text-sm leading-[16.8px]">
               The Forte Lurex Linen Viscose Jacket in Mother of Pearl features
               lunar lavishness by night and by day: a blazer in a linen blend
               shot with lurex for a shimmering surface that shines like a star
@@ -32,7 +32,7 @@ function TabSection() {
             </p>
           </div>
           <div data-label="Delivery">
-            <p className="text-sm">
+            <p className="text-sm leading-[16.8px]">
               The Forte Lurex Linen Viscose Jacket in Mother of Pearl features
               lunar lavishness by night and by day: a blazer in a linen blend
               shot with lurex for a shimmering surface that shines like a star
@@ -56,7 +56,7 @@ function TabSection() {
             </p>
           </div>
           <div data-label="Fit">
-            <p className="text-sm">
+            <p className="text-sm leading-[16.8px]">
               The Forte Lurex Linen Viscose Jacket in Mother of Pearl features
               lunar lavishness by night and by day: a blazer in a linen blend
               shot with lurex for a shimmering surface that shines like a star
@@ -80,7 +80,7 @@ function TabSection() {
             </p>
           </div>
           <div data-label="Share">
-            <p className="text-sm">
+            <p className="text-sm leading-[16.8px]">
               The Forte Lurex Linen Viscose Jacket in Mother of Pearl features
               lunar lavishness by night and by day: a blazer in a linen blend
               shot with lurex for a shimmering surface that shines like a star
@@ -104,7 +104,7 @@ function TabSection() {
             </p>
           </div>
         </Tabs>
-        </div>
+      </div>
     </section>
   );
 }

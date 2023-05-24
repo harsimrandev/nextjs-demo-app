@@ -5,6 +5,7 @@ import Tabs from "@/components/modules/Tabs";
 function TabSection() {
   return (
     <section>
+      <div className="sticky top-0">
         <Tabs>
           <div data-label="Details">
             <p className="text-sm">
@@ -103,6 +104,7 @@ function TabSection() {
             </p>
           </div>
         </Tabs>
+        </div>
     </section>
   );
 }

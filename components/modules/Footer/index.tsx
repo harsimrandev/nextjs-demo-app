@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="mx-auto w-2/3 flex-col mt-10 mb-10">
+    <div className="mx-auto flex-col mt-10 mb-10">
       <div className="flex justify-center mb-20 text-center ">
         <p className="text-sm mr-5">
           <Link href="/" className="underline">
@@ -21,7 +21,7 @@ export default function Footer() {
         </p>
       </div>
       <p className="uppercase text-sm font-bold mb-2 text-center ">a note from the editor</p>
-      <p className="font-normal	text-xl	lg:text-[32px] mb-2 text-center leading-[140%] lg:leading-[44.8px]">
+      <p className="mx-auto w-11/12 lg:w-[800px] font-normal	text-xl	lg:text-[32px] mb-2 text-center leading-[140%] lg:leading-[44.8px]">
         The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar
         lavishness by night and by day: a blazer in a linen blend shot with
         lurex for a shimmering surface that shines like a star in the sky.

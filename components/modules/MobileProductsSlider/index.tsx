@@ -14,7 +14,7 @@ export default function MobileProductsSlider() {
       <div className="-mt-5">
       <Carousel infiniteLoop showStatus={false}>
         {imagesArray.map(i => (
-          <div>
+          <div key={i}>
             <Image
               src={`/images/product/product${i}.png`}
               alt="product1"

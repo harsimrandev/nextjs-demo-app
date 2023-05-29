@@ -12,7 +12,7 @@ export default function MobileProductsSlider() {
         <Image src="/images/heart.svg" alt="product1" width={20} height={18} />
       </div>
       <div className="-mt-5">
-      <Carousel infiniteLoop showStatus={false}>
+      <Carousel infiniteLoop showStatus={false} showThumbs={false}>
         {imagesArray.map(i => (
           <div key={i}>
             <Image

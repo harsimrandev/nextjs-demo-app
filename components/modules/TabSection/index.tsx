@@ -4,7 +4,7 @@ import Tabs from "@/components/modules/Tabs";
 
 function TabSection() {
   return (
-    <section className="hidden lg:block">
+    <aside className="hidden lg:block">
       <div className="sticky top-0">
         <Tabs>
           <div data-label="Details">
@@ -105,7 +105,7 @@ function TabSection() {
           </div>
         </Tabs>
       </div>
-    </section>
+    </aside>
   );
 }
 

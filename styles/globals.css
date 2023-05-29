@@ -41,3 +41,22 @@ body {
 .carousel.carousel-slider {
   overflow: visible !important;
 }
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-16deg);
+  -moz-transform:rotate(-16deg);
+  -ms-transform:rotate(-16deg);
+  -o-transform:rotate(-16deg);
+  transform:rotate(-16deg);
+}

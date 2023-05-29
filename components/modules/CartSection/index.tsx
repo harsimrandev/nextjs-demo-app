@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Button from "@/components/elements/Button";
 
+const sizeButtons = [
+  {
+    label: "XS",
+    type: "inactive"
+  },
+  {
+    label: "S",
+    type: "inactive"
+  },
+  {
+    label: "M",
+    type: "disabled"
+  },
+  {
+    label: "L",
+    type: "primary"
+  },
+  {
+    label: "XXL",
+    type: "inactive"
+  },
+];
+
 export default function CartSection() {
+  const [activeButton, setActive] = useState<string>("L");
+
   return (
     <section>
       <div className="sticky top-0 flex flex-1 justify-center lg:justify-end">
@@ -24,25 +49,15 @@ export default function CartSection() {
           <section className="mt-5">
             <div className="flex justify-between mb-2">
               <p className="text-sm">
-                <strong>SIZE</strong> L
+                <strong>SIZE</strong> {activeButton}
               </p>
               <p className="text-sm underline">SIZE GUIDE</p>
             </div>
-            <Button type="inactive" classname="m-1">
-              XS
+            {sizeButtons.map(s => (
+              <Button type={s.type === 'disabled' ? 'disabled' : activeButton === s.label ? 'primary' : 'inactive'} classname="m-1" key={s.label} handleClick={() => setActive(s.label)}>
+              {s.label}
             </Button>
-            <Button type="inactive" classname="m-1">
-              S
-            </Button>
-            <Button type="disabled" classname="m-1">
-              M
-            </Button>
-            <Button type="primary" classname="m-1">
-              L
-            </Button>
-            <Button type="inactive" classname="m-1">
-              XXL
-            </Button>
+            ))}
             <Button type="primary" classname="w-full mt-5 py-3 uppercase flex items-center	justify-center">
               <span className="mr-2">ADD TO BAG</span><Image src="/images/arrow.svg" width={16} height={10} alt="arrow" />
             </Button>

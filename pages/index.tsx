@@ -5,6 +5,7 @@ import CartSection from '@/components/modules/CartSection'
 import ProductsImages from '@/components/modules/ProductsImages'
 import Footer from '@/components/modules/Footer'
 import MobileProductsSlider from '@/components/modules/MobileProductsSlider'
+// import Test from '@/components/test'
 
 const inter = Inter({ subsets: ['latin'] })
 
